@@ -11,7 +11,8 @@ local env = {
 	end)();
 	wait   = task.wait;
 	spawn  = task.spawn;
-	const  = loadfile("perish/src/core/constants.lua")(),
+	bus = import("core/bus");
+	const  = loadfile("perish/src/core/constants.lua")();
 }
 
 local cache = {};
