@@ -10,10 +10,7 @@ local function draw(idx, txt)
 	lbl.Size = 16
 	lbl.Color = Color3.new(1, 1, 1)
 	lbl.Font = 0
-	lbl.Outline = true
-	lbl.OutlineColor = Color3.new(0, 0, 0)
 	lbl.Position = Vector2.new(cam.ViewportSize.X - lbl.TextBounds.X - pad, y0 + (idx - 1) * step)
-	lbl.Visible = true
 	msgs[idx] = lbl
 end
 
